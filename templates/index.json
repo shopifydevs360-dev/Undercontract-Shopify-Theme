@@ -16,9 +16,7 @@
           "type": "image_slide",
           "settings": {
             "text_color_scheme": "default",
-            "image": "shopify://shop_images/Gemini_Generated_Image_sskctbsskctbsskc.png",
-            "mobile_image": "shopify://shop_images/Forest_620x_105465d1-625c-45b3-be53-e5b2829d7cbe.webp",
-            "subheading": "MODEST SILHOUETTES FOR WORKOUTS",
+            "subheading": "Hello",
             "sub_heading_font_size": "h4",
             "heading": "ACTIVEWEAR SET",
             "heading_size": "hd-2",
@@ -35,8 +33,6 @@
           "type": "image_slide",
           "settings": {
             "text_color_scheme": "default",
-            "image": "shopify://shop_images/Gemini_Generated_Image_lxrcvilxrcvilxrc.png",
-            "mobile_image": "shopify://shop_images/Aab_2025_09_26_0034_1.jpg",
             "subheading": "PREMIUM HIJABS FOR DAILY WEAR",
             "sub_heading_font_size": "h4",
             "heading": "NEW IN HIJAB",
@@ -139,7 +135,6 @@
         "image_kECNVX": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ABAYAS_15cc78c0-b1eb-41af-88c6-2.jpg",
             "title": "ABAYAS",
             "cta_text": "SHOP NOW",
             "link": "",
@@ -151,7 +146,6 @@
         "image_aqwiNQ": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/MAXIS_2_81740592-609c-471a-96f9.jpg",
             "title": "MAXI DRESSES",
             "cta_text": "SHOP NOW",
             "link": "",
@@ -163,7 +157,6 @@
         "image_y36x6i": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Co-Ords_1_4ac1d864-feb8-4340-a9f.jpg",
             "title": "HIJABS",
             "cta_text": "SHOP NOW",
             "link": "",
@@ -175,7 +168,6 @@
         "image_aAzyWm": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/HIJABS_1_2b0fca8a-4c36-4dcd-b998.jpg",
             "title": "CO-ORDS",
             "cta_text": "SHOP NOW",
             "link": "",
@@ -220,8 +212,7 @@
       "disabled": true,
       "name": "Hero Intro",
       "settings": {
-        "heading_text": "<p>Meet the base you'll build every outfit on.</p>",
-        "image": "shopify://shop_images/Gemini_Generated_Image_sskctbsskctbsskc.png"
+        "heading_text": "<p>Meet the base you'll build every outfit on.</p>"
       }
     }
   },
