@@ -1,0 +1,77 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "t:general.footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "newsletter_CFVLR3": {
+          "type": "newsletter",
+          "settings": {
+            "block_width": "40",
+            "text": "<p>By registering, I agree to receive emails from Halla Hijab and other trusted P&G brands and programs. </p>",
+            "checkbox_text": "Yes, send me your newsletter",
+            "button_text": "Subscribe"
+          }
+        },
+        "empty_space_HXhE9H": {
+          "type": "empty_space",
+          "settings": {
+            "block_width": "5"
+          }
+        },
+        "menu_im6XPD": {
+          "type": "menu",
+          "settings": {
+            "block_width": "20",
+            "title": "Footer menu",
+            "menu": "footer"
+          }
+        },
+        "menu_gkXTYr": {
+          "type": "menu",
+          "settings": {
+            "block_width": "20",
+            "title": "Footer menu",
+            "menu": "footer"
+          }
+        },
+        "menu_VQ7rpJ": {
+          "type": "menu",
+          "settings": {
+            "block_width": "15",
+            "title": "Footer menu",
+            "menu": "main-menu"
+          }
+        }
+      },
+      "block_order": [
+        "newsletter_CFVLR3",
+        "empty_space_HXhE9H",
+        "menu_im6XPD",
+        "menu_gkXTYr",
+        "menu_VQ7rpJ"
+      ],
+      "settings": {
+        "footer_color_scheme": "",
+        "container_width": "container",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "custom_class": "",
+        "color_control": "section-light"
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}
