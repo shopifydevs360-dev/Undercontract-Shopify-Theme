@@ -97,7 +97,7 @@
 }
 .quantity-dropdown {
   position: relative;
-  width: 120px;
+  width: 5.25rem;
 }
 
 .qty-toggle {
@@ -108,6 +108,7 @@
   background: rgb(var(--color-background));
   cursor: pointer;
   text-align: left;
+  font-size: inherit;
 }
 
 .qty-list {
