@@ -136,6 +136,7 @@
         "image_kECNVX": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/pureclaymodal_360x_2bdfae2f-d3c6-4925-b220-378204175b19.jpg",
             "title": "ABAYAS",
             "cta_text": "SHOP NOW",
             "link": "",
@@ -147,6 +148,7 @@
         "image_aqwiNQ": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Pewter_Premium_Jersey_Hijab_620x_74136192-8caa-43fe-8824-14beef6aa61a.webp",
             "title": "MAXI DRESSES",
             "cta_text": "SHOP NOW",
             "link": "",
@@ -158,6 +160,7 @@
         "image_y36x6i": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Aab_2025_09_26_0119_360x_143777eb-5390-437d-9a3e-d32197afd726.webp",
             "title": "HIJABS",
             "cta_text": "SHOP NOW",
             "link": "",
@@ -169,6 +172,7 @@
         "image_aAzyWm": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Aab_2025_09_27_0154_360x_ae3101d7-8e3f-4cc1-ad56-25da7bd664a0.jpg",
             "title": "CO-ORDS",
             "cta_text": "SHOP NOW",
             "link": "",
