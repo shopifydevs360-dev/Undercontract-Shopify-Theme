@@ -34,3 +34,4 @@ function initPromoBarState() {
 
   body.classList.toggle("has-promo-bar", !!promoBar);
 }
+

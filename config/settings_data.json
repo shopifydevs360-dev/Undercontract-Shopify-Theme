@@ -49,8 +49,14 @@
     "spacing_sections_mobile": 0,
     "search_type": "drawer",
     "search_color_scheme": "scheme-1e6195d5-cb89-4a9c-a4a6-d3205814ce99",
+    "corner-radius-style-one": 4,
     "cart_behavior": "ajax_drawer",
     "aspect_ratio": "cropped-image--portrait",
+    "whatsapp_number": "+84 (0)387 392 056",
+    "social_twitter_link": "#",
+    "social_facebook_link": "#",
+    "social_pinterest_link": "#",
+    "social_instagram_link": "#",
     "type_header_base_size": 49,
     "type_header_spacing": 0,
     "background_color": "#222222",
@@ -103,8 +109,29 @@
       },
       "scheme-49da4596-ce95-41b0-af9e-06e9092dbbf6": {
         "settings": {
-          "background": "#f3f3f3",
-          "background_secondary": "#f3f3f3",
+          "background": "#f3f3f4",
+          "background_secondary": "#000000",
+          "background_gradient": "",
+          "text": "#222222",
+          "subtext": "#222222",
+          "heading_text": "#222222",
+          "link_color": "#222222",
+          "link_hover_color": "#222222",
+          "price_sale": "#e02b2b",
+          "price_regular": "#222222",
+          "form_field": "#ffffff",
+          "form_field_label": "#222222",
+          "tooltip": "#222222",
+          "tooltip_label": "#ffffff",
+          "border": "#eeeeee",
+          "additional_color_1": "#ff0000",
+          "additional_color_2": "#00ff00"
+        }
+      },
+      "scheme-463aa170-38a9-48ec-ba18-a79d8cec742f": {
+        "settings": {
+          "background": "#f3f3f4",
+          "background_secondary": "#222222",
           "background_gradient": "",
           "text": "#222222",
           "subtext": "#222222",
@@ -117,7 +144,7 @@
           "form_field_label": "#222222",
           "tooltip": "#222222",
           "tooltip_label": "#ffffff",
-          "border": "#eeeeee",
+          "border": "#cccccc",
           "additional_color_1": "#ff0000",
           "additional_color_2": "#00ff00"
         }

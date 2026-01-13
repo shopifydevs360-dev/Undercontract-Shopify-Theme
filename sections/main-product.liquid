@@ -1,0 +1,178 @@
+{{ 'main-product.css' | asset_url | stylesheet_tag }}
+{{ 'product-media.css' | asset_url | stylesheet_tag }}
+{%- liquid
+  assign p_outer_classes = 'main-product'
+  assign p_outer_classes = p_outer_classes | append: ' m-color-' | append: section.settings.main_product_color
+  assign p_outer_classes = p_outer_classes | append: ' ' | append: section.settings.custom_class
+  assign p_outer_classes = p_outer_classes | append: ' ' | append: section.settings.color_control
+-%}
+<section class="{{ p_outer_classes }}">
+
+  <div class="product-layout">
+
+    <!-- =====================
+         LEFT: PRODUCT MEDIA
+    ====================== -->
+    <div class="media-warpper">
+      {% render 'main-product-media', product: product %}
+    </div>
+    <!-- =====================
+         RIGHT: PRODUCT INFO
+    ====================== -->
+    <div class="product-info">
+
+      {% for block in section.blocks %}
+        {% case block.type %}
+
+          <!-- TITLE + PRICE -->
+          {% when 'title_price' %}
+            {% render 'product-title-price', product: product, block: block %}
+
+
+          <!-- REVIEW COUNT -->
+          {% when 'review-count' %}
+            {% if product.metafields.reviews.count > 0 %}
+              {% render 'review-count', product: product, block: block %}
+            {% endif %}
+
+          <!-- ADD TO CART FORM -->
+          {% when 'add_to_cart_form' %}
+            {% render 'main-add-to-cart-form', product: product, block: block %}
+
+
+          <!-- SHORT DESCRIPTION -->
+          {% when 'short_description' %}
+            {% if product.metafields.custom.short_description != blank %}
+              <div class="product-block" {{ block.shopify_attributes }}>
+                {{ product.metafields.custom.short_description }}
+              </div>
+            {% endif %}
+
+
+          <!-- FULL DESCRIPTION -->
+          {% when 'description' %}
+            <div class="product-block" {{ block.shopify_attributes }}>
+              {{ product.description }}
+            </div>
+
+          <!-- ACCORDION -->
+          {% when 'accordion' %}
+            {% render 'product-accordion', block: block %}
+        {% endcase %}
+      {% endfor %}
+
+    </div>
+
+  </div>
+
+</section>
+<script src="{{ 'main-product.js' | asset_url }}" defer></script>
+<script src="{{ 'product-media.js' | asset_url }}" defer></script>
+<script>
+  window.product = {{ product | json }};
+</script>
+
+{% schema %}
+{
+  "name": "Main product",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "main_product_color",
+      "label": "Color scheme"
+    },
+    {
+      "type": "header",
+      "content": "Dynamic Option"
+    },
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom class"
+    },
+    {
+      "type": "select",
+      "id": "color_control",
+      "label": "Color Control",
+      "options": [
+        { "value": "section-dark", "label": "Dark" },
+        { "value": "section-light", "label": "Light" }
+      ],
+      "default": "section-light"
+    }
+  ],
+  "blocks": [
+    { 
+      "type": "title_price", 
+      "name": "Title & price", 
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "title_font_size",
+          "label": "Title font size",
+          "options": [
+            { "value": "h1", "label": "h1" },
+            { "value": "h2", "label": "h2" },
+            { "value": "h3", "label": "h3" },
+            { "value": "h4", "label": "h4" },
+          ],
+          "default": "h2"
+        },
+        {
+          "type": "select",
+          "id": "price_font_size",
+          "label": "Price font size",
+          "options": [
+            { "value": "h1", "label": "h1" },
+            { "value": "h2", "label": "h2" },
+            { "value": "h3", "label": "h3" },
+            { "value": "h4", "label": "h4" },
+            { "value": "h5", "label": "h5" },
+            { "value": "h6", "label": "h6" },
+          ],
+          "default": "h3"
+        },
+      ]
+    },
+    { "type": "review-count", "name": "Reviews count", "limit": 1 },
+    { 
+      "type": "add_to_cart_form", 
+      "name": "Add to cart", 
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "cart_behavior",
+          "label": "Action",
+          "options": [
+            {
+              "value": "redirect",
+              "label": "Redirect to Cart Page"
+            },
+            {
+              "value": "ajax",
+              "label": "Ajax - No Redirect"
+            },
+            {
+              "value": "ajax_drawer",
+              "label": "Ajax + Open Cart Drawer"
+            }
+          ],
+          "default": "redirect"
+        },
+      ]
+    },
+    { "type": "short_description", "name": "Short description" },
+    { "type": "description", "name": "Description" },
+    {
+      "type": "accordion",
+      "name": "Accordion",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Title" },
+        { "type": "richtext", "id": "content", "label": "Content" }
+      ]
+    }
+  ]
+}
+{% endschema %}
