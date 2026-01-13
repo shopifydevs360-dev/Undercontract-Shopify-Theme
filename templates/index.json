@@ -16,7 +16,8 @@
           "type": "image_slide",
           "settings": {
             "text_color_scheme": "default",
-            "image": "shopify://shop_images/7a94ef25-2009-4b2a-93b6-6c64d2bc9a67.jpg",
+            "image": "shopify://shop_images/Gemini_Generated_Image_sskctbsskctbsskc.png",
+            "mobile_image": "shopify://shop_images/Forest_620x_105465d1-625c-45b3-be53-e5b2829d7cbe.webp",
             "subheading": "MODEST SILHOUETTES FOR WORKOUTS",
             "sub_heading_font_size": "h4",
             "heading": "ACTIVEWEAR SET",
@@ -34,6 +35,8 @@
           "type": "image_slide",
           "settings": {
             "text_color_scheme": "default",
+            "image": "shopify://shop_images/Gemini_Generated_Image_lxrcvilxrcvilxrc.png",
+            "mobile_image": "shopify://shop_images/Aab_2025_09_26_0034_1.jpg",
             "subheading": "PREMIUM HIJABS FOR DAILY WEAR",
             "sub_heading_font_size": "h4",
             "heading": "NEW IN HIJAB",
@@ -68,7 +71,7 @@
           "settings": {
             "tab_label": "Hijab",
             "tab_link": "",
-            "collection": "co-ord-sets"
+            "collection": "hijabs"
           }
         },
         "tab_CNPqei": {
@@ -76,7 +79,7 @@
           "settings": {
             "tab_label": "Abayas",
             "tab_link": "",
-            "collection": "hydrogen"
+            "collection": "abayas"
           }
         }
       },
@@ -136,7 +139,7 @@
         "image_kECNVX": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/pureclaymodal_360x_2bdfae2f-d3c6-4925-b220-378204175b19.jpg",
+            "image": "shopify://shop_images/ABAYAS_15cc78c0-b1eb-41af-88c6-2.jpg",
             "title": "ABAYAS",
             "cta_text": "SHOP NOW",
             "link": "",
@@ -148,7 +151,7 @@
         "image_aqwiNQ": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Pewter_Premium_Jersey_Hijab_620x_74136192-8caa-43fe-8824-14beef6aa61a.webp",
+            "image": "shopify://shop_images/MAXIS_2_81740592-609c-471a-96f9.jpg",
             "title": "MAXI DRESSES",
             "cta_text": "SHOP NOW",
             "link": "",
@@ -160,7 +163,7 @@
         "image_y36x6i": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Aab_2025_09_26_0119_360x_143777eb-5390-437d-9a3e-d32197afd726.webp",
+            "image": "shopify://shop_images/Co-Ords_1_4ac1d864-feb8-4340-a9f.jpg",
             "title": "HIJABS",
             "cta_text": "SHOP NOW",
             "link": "",
@@ -172,7 +175,7 @@
         "image_aAzyWm": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Aab_2025_09_27_0154_360x_ae3101d7-8e3f-4cc1-ad56-25da7bd664a0.jpg",
+            "image": "shopify://shop_images/HIJABS_1_2b0fca8a-4c36-4dcd-b998.jpg",
             "title": "CO-ORDS",
             "cta_text": "SHOP NOW",
             "link": "",
@@ -204,7 +207,7 @@
         "text_color_scheme": "scheme-1e6195d5-cb89-4a9c-a4a6-d3205814ce99",
         "wrapper_title": "Featured Articles",
         "wrapper_title_font_size": "h2",
-        "blog": "news",
+        "blog": "journal",
         "post_title_font": "h3",
         "padding_top": 64,
         "padding_bottom": 68,
@@ -217,7 +220,8 @@
       "disabled": true,
       "name": "Hero Intro",
       "settings": {
-        "heading_text": "<p>Meet the base you'll build every outfit on.</p>"
+        "heading_text": "<p>Meet the base you'll build every outfit on.</p>",
+        "image": "shopify://shop_images/Gemini_Generated_Image_sskctbsskctbsskc.png"
       }
     }
   },
